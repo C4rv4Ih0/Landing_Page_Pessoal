@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body { overflow-x: hidden; }
+
+*{  /* Zerando a estilização padrão do navegador*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html{
+
+    /*Faz com que use todo o espaço da tela*/
+    width: 100vw;
+    height: 100vh;
+    font-size: 62,5%; /* usar porcentagem e não px, faz com que a gente possa usar o rem, isso ajuda na responsividade do site*/
+    overflow-x: hidden; /* tira a barra de rolagem horizontal, ficando apenas a vertical*/
+}
+
+.menu-bar{
+
+    width: 100vw;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1C0436;
+    position: fixed;
+    padding-left: 14rem;
+}
+
+.menu-bar .menu{
+
+    width: 700px; /*largura onde fica os textos do menu*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20rem;
+    margin-top: 0.5rem;
+}
+
+.menu-bar .menu li a{
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Roboto-mono', sans-serif;
+    color: white;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 300ms ease-in;
+}
+
+.menu-bar .menu li a:hover{
+
+    background-color: #330a5a;
+    border-bottom: 3px solid #7A1865;
+    
+}
+
+.pg1{
+
+    height: 100vh;
+    background-image:url(./img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.conteudo1 img{
+
+    display: flex;
+    margin-top: -26.2rem;
+    margin-left: 40rem;
+    width: 43vw;
+    height: auto;
+    
+
+}
+
+.pg1 .conteudo1{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    color: white;
+}
+
+.pg1 h1{
+
+    margin-top: 18rem;
+    font-size: 5rem;
+
+}
+
+.pg1 h2{
+
+    margin-top: 0.5rem;
+    font-size: 2rem;
+
+}
+
+.pg1 h3{
+
+    font-size: 2rem;
+}
+
+.btn1 button{
+
+    width: 230px;
+    height: 50px;
+    display: flex;
+    margin-top: -10rem;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    transition: all 200ms ease-in;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn1 button:hover{
+
+    
+    background-color: #1C0436;
+    border-color:#7A1865;
+    
+    
+}
